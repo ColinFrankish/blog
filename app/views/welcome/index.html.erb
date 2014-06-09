@@ -1,3 +1,15 @@
-<h1>Hello Rails!</h1>
+<body id='homepage'>
+<h1 id='welcome'>Welcome to My Blog</h1>
 
-<%= link_to 'My Blog', controller: 'articles' %>
+  <div id="blog_link">
+    <p>Please click the link below to go onto the blog site</p> 
+    <%= link_to 'Go To My Blog' , controller: 'articles' %>
+  </div>
+  <p id='homepage_text'>In the meantime.. Here are some pictures of dolphins for no real reason.....</p>
+  <div id="homepage_images">
+    <%= image_tag 'dolphin.jpg'%>
+    <%= image_tag 'dolphins_jumping.jpg' %>
+    <%= image_tag 'dolphin_staring.jpg' %>
+    <%= image_tag 'dolphin_clapping.jpg' %>
+  </div>
+</body>
