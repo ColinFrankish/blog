@@ -6,12 +6,15 @@
   <tr>
     <th>Title</th>
     <th>Text</th>
+    <th colspan="2"></th>
   </tr>
 
   <% @articles.each do |article| %>
     <tr>
       <td><strong><%= article.title %></strong></td>
       <td><%= article.text%></td>
+      <td><%= link_to 'Show Article', article_path(article) %></td>
+      <td><%= link_to 'Edit Article', edit_article_path(article) %></td>
     </tr>
   <% end %>  
 </table>
