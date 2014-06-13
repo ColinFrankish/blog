@@ -1,8 +1,7 @@
 <h1 class='pageheader'>All Articles in My Blog</h1>
 
-  <%= link_to 'New Article', new_article_path %>
 
-<table>
+<table align="center">
   <tr>
     <th>Title</th>
     <th>Text</th>
@@ -13,14 +12,17 @@
     <tr>
       <td><strong><%= article.title %></strong></td>
       <td><%= article.text%></td>
-      <td><%= link_to 'Show Article', article_path(article) %></td>
-      <td><%= link_to 'Edit Article', edit_article_path(article) %></td>
-      <td><%= link_to 'Delete Article', article_path(article), 
+      <td id='show'><%= link_to 'Show Article', article_path(article) %></td>
+      <td id='edit'><%= link_to 'Edit Article', edit_article_path(article) %></td>
+      <td id='delete'><%= link_to 'Delete Article', article_path(article), 
                 method: :delete, data: { confirm: 'Are you really sure you want to delete?'} %></td>
     </tr>
   <% end %>  
 </table>
 
-<h3>
+<h3 id='links'>
+  <%= link_to 'New Article', new_article_path %>
+  <p></p>
   <%= link_to 'Return to Welcome Page', welcome_index_path %>
+
 </h3>
