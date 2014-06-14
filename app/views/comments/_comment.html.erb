@@ -1,5 +1,6 @@
+<div class='comments_page'>
 <p>
-  <strong>Commenter:</strong><br>
+  <strong>Name of commenter:</strong><br>
   <%= comment.commenter %>
 </p>
 <p>
@@ -8,7 +9,8 @@
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.article,comment],
+  <%= link_to 'Destroy This Comment', [comment.article,comment],
               method: :delete,
               data: { comfirm: 'Are you sure?'} %>
 </p>
+</div>  
