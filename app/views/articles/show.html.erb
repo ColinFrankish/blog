@@ -1,4 +1,5 @@
 <h1 class='pageheader'>Your Chosen Article!</h1>
+
 <p id='highlighted_comment'>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -13,8 +14,11 @@
   
 
 <h3>Add A Comment:</h3>
-<%= render 'comments/form' %>
-<p id='links'>
+
+<p id='link1'>
 <%= link_to 'Show All Articles', articles_path %>
+</p>
+<p id='link2'>
 <%= link_to 'Edit Article', edit_article_path(@article) %>
 </p>
+<%= render 'comments/form' %>
