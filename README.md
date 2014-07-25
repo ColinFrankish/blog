@@ -5,5 +5,5 @@ Here I build a simple blog application, allowing people to add messages to a blo
 Some more advanced styling used to make the sight a bit more presentable ! 
 
 `````shell
-run using rails server,  and open in localhost:3000
+run using rails server (rails s),  and open in localhost:3000
 `````
